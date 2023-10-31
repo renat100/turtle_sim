@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  turtle_sim_container:
+    build: Docker/
+    image: turtle_sim_image
+    container_name: turtle_sim_container
+    user: turtle_sim
+    network_mode: host
+    ipc: host
+    volumes:
+      - ./App:/App
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    #Import every device present in the directory /dev/dri
+    devices:
+      - /dev/dri/card0:/dev/dri/card0
+      - /dev/dri/card1:/dev/dri/card1
+      - /dev/dri/renderD128:/dev/dri/renderD128
+      - /dev/dri/renderD129:/dev/dri/renderD129
+    stdin_open: true
+    tty: true
