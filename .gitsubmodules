@@ -1,0 +1,9 @@
+[submodule "turtlebot3"]
+        path = ./App/src/turtlebot3
+        url = -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3
+[submodule "turtlebot3_msgs"]
+        path = ./App/src/turtlebot3_msgs
+        url = -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+[submodule "turtlebot3_simulations"]
+        path = ./App/src/turtlebot3_simulations
+        url = -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
