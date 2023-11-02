@@ -1,0 +1,9 @@
+[submodule "App/src/turtlebot3"]
+	path = App/src/turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3
+[submodule "App/src/turtlebot3_msgs"]
+	path = App/src/turtlebot3_msgs
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+[submodule "App/src/turtlebot3_simulations"]
+	path = App/src/turtlebot3_simulations
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations
