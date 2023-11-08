@@ -3,10 +3,10 @@
 La prima volta dopo aver scaricato l'immagine
 Entrare dentro la directory scaricata e lanciare i seguenti comandi da terminale:
 
-'''
+```
 git submodule init
 git submodule update
-'''
+```
 ```
 docker compose up
 ```
@@ -25,20 +25,20 @@ attach (al servizio in esecuzione sul container, interfaccia in/out al servizio)
 noto il nome del container (in questo caso il nome è sempre "ros_app"), comando
 ```
 docker exec -it ros_app bash
-``'
+```
 
 # ROS
 
 Entrati nel container fare la build del workspace
-'''
+```
 colcon build
 source install/setup.bash
-'''
+```
 
 Per lanciare la simulazione gazebo
 
-'''
+```
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-'''
+```
 
