@@ -41,6 +41,14 @@ Per lanciare la simulazione gazebo
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
+
+Per lanciare il controllo da tastiera
+
+```
+export TURTLEBOT3_MODEL=burger
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
 Creare un nuovo package, quindi entrare nella directory src e lanciare il seguente comando
 ```
 ros2 pkg create pub_sub --build-type ament_cmake –dependencies rclcpp geometry_msgs sensor_msgs
